@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="939a7a55-d92f-422e-9a5f-084e5571469b" name="lubancat">
+        <fileTransfer rootFolder="/home/cat/light" accessType="SFTP" host="192.168.0.104" port="22" sshConfigId="60ae6e3f-d859-4233-a275-7d44f31ac6ea" sshConfig="cat@192.168.0.104:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

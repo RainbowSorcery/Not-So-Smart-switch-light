@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteTargetsManager">
+    <targets>
+      <target name="cat@192.168.0.104:22" type="ssh/sftp" uuid="5788debe-08ac-48e7-a5e2-f0c6e2d0e1b9">
+        <config>
+          <option name="projectRootOnTarget" value="/home/cat/light" />
+          <option name="serverName" value="cat@192.168.0.104:22 password" />
+        </config>
+        <ContributedStateBase type="GoLanguageRuntime">
+          <config>
+            <option name="compiledExecutablesVolume">
+              <VolumeState>
+                <option name="remotePath" value="/home/cat/light" />
+              </VolumeState>
+            </option>
+            <option name="goPath" value="/home/cat/go" />
+            <option name="goRoot" value="/usr/local/go/bin/go" />
+            <option name="projectSourcesVolume">
+              <VolumeState>
+                <option name="remotePath" value="/home/cat/light" />
+              </VolumeState>
+            </option>
+          </config>
+        </ContributedStateBase>
+      </target>
+    </targets>
+  </component>
+</project>
