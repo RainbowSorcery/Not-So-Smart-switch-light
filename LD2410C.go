@@ -65,9 +65,9 @@ func main() {
 			// 如果门开了且没检测到关 那么就开灯
 			currentDoorState := string(msg.Payload())
 			if currentDoorState != lastDoorState && lightLevel == 0 {
-				log.Printf("检测到不同状态，上次状态:%s, 当前状态:%s", lastDoorState, currentDoorState)
+				log.Printf("检测到不同状态，上次状态:%s, 当前状态:%s, 雷达状态:%s", lastDoorState, currentDoorState, statusStr)
 				lastDoorState = currentDoorState
-				if currentDoorState == "OPEN" && statusStr == "无人" {
+				if currentDoorState == "OPEN" && statusStr != "无人" {
 					log.Printf("开门未检测到光，开灯, 光敏:%d, 当前门状态:%s, 上次门状态:%s,雷达检测状态:%s", lightLevel, currentDoorState, lastDoorState, statusStr)
 					client.Publish("esp8266/inTopic", 0, false, "ON")
 				}
